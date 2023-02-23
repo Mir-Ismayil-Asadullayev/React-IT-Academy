@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600&display=swap');
+
+body {
+    font-family: Roboto, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+}
+
+label {
+    margin: 3px 0;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: bisque;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+button {
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: tan;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+button:active {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: tan;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=checkbox] {
+    margin-left: 159px;
+    accent-color: tan;
+}
+
+textarea {
+    max-width: 94%;
+    max-height: 50px;
+    min-width: 94%;
+    min-height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+select {
+    margin-bottom: 3px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+    border-radius: 5px;
+    outline: none;
+}
+
+option {
+    margin: 8px;
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+}
