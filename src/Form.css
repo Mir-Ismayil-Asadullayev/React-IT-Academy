@@ -2,7 +2,7 @@
 
 body {
     font-family: Roboto, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,35 +12,39 @@ body {
     align-content: center;
     align-items: center;
     color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
 form {
-    margin-top: 50px;
     display: flex;
     flex-flow: column wrap;
     width: 300px;
+    background-color: rgb(11, 71, 11);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
 }
 
 label {
-    margin: 3px 0;
-    font-size: 12px;
+    margin: 8px 0;
     width: 100%;
     font-weight: bold;
 }
 
 input {
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
-    background-color: bisque;
+    background-color: rgb(168, 255, 87);
     border: 1px solid rgb(3, 3, 3);
 }
 
 button {
-    margin: 5px 0;
+    margin: 15px 0 0;
     outline: none;
     border: 1px solid rgb(0, 0, 0);
-    background-color: tan;
+    background-color: rgb(89, 163, 4);
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 15px;
@@ -48,14 +52,14 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: black;
+    color: rgb(89, 163, 4);
 }
 
 button:active {
+    background-color: rgb(89, 163, 4);
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: tan;
 }
 
 input::-webkit-outer-spin-button,
@@ -64,34 +68,15 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type=checkbox] {
-    margin-left: 159px;
-    accent-color: tan;
-}
-
 textarea {
     max-width: 94%;
     max-height: 50px;
     min-width: 94%;
     min-height: 50px;
     color: rgb(0, 0, 0);
-    background-color: bisque;
+    background-color: rgb(122, 255, 60);
     padding: 10px;
     border-radius: 5px;
     outline: none;
-}
-
-select {
-    margin-bottom: 3px;
-    padding: 5px;
-    color: rgb(0, 0, 0);
-    background-color: bisque;
-    border-radius: 5px;
-    outline: none;
-}
-
-option {
-    margin: 8px;
-    color: rgb(0, 0, 0);
-    background-color: bisque;
+    resize: none;
 }
