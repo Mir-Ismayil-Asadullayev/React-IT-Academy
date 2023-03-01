@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useRef } from 'react';
 import './Form.css'
 
 function Form() {
-    const [info, setinfo] = useState({});
+    const infoData = new FormData();
+    const checkbox = useRef()
+    const [info, setinfo] = useState(infoData);
     const handleInfo = (e) => {
         switch (e.target.name) {
             case "fullname":
@@ -32,7 +35,7 @@ function Form() {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        info.checkbox = e.target.childNodes[14].childNodes[1].checked;
+        info.checkbox = checkbox.current.checked;
         setinfo(info);
         console.log(info);
         alert("Карточка зарегистрирована!");
@@ -56,7 +59,7 @@ function Form() {
             <input type="number" placeholder="+" name="phone" onChange={handleInfo} />
             <label htmlFor="textarea">Symptoms description:</label>
             <textarea name="textarea" cols="30" rows="10" placeholder="Please type your symptoms..." onChange={handleInfo}></textarea>
-            <label htmlFor="checkbox">Repeated reception:<input type="checkbox" name="checkbox" /></label>
+            <label htmlFor="checkbox">Repeated reception:<input ref={checkbox} type="checkbox" name="checkbox" onChange={handleInfo} /></label>
             <button>Send</button>
         </form>
     )
