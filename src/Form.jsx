@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Form.css'
 
 function Form() {
-    const [info, setinfo] = useState({});
+    const data = new FormData();
+    const [info, setinfo] = useState(data);
     const handleInfo = (e) => {
         switch (e.target.name) {
             case "name":
@@ -30,6 +31,7 @@ function Form() {
         console.log(info);
         alert("Карточка зарегистрирована!");
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name:</label>
