@@ -7,19 +7,19 @@ function Form() {
     const handleInfo = (e) => {
         switch (e.target.name) {
             case "name":
-                info.name = e.target.value;
+                info.append('name', e.target.value);
                 break;
             case "surname":
-                info.surname = e.target.value;
+                info.append('surname', e.target.value);
                 break;
             case "email":
-                info.email = e.target.value;
+                info.append('email', e.target.value);
                 break;
             case "phone":
-                info.phone = e.target.value;
+                info.append('phone', e.target.value);
                 break;
             case "comment":
-                info.comment = e.target.value;
+                info.append('comment', e.target.value);
                 break;
             default:
                 break;
