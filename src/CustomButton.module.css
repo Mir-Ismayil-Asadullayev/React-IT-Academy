@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600&display=swap');
+
+body {
+    font-family: Roboto, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.button {
+    all: unset;
+    font-size: 20px;
+    margin: 10px;
+    border: 2px solid rgb(255, 166, 0);
+    background-color: rgb(255, 166, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.warn {
+    border: 5px solid red;
+}
+.cursive{
+    font-style:italic;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 166, 0);
+}
+
+.button:active {
+    background-color: rgb(255, 166, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.toaster {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 570px;
+    background-color: yellowgreen;
+    padding: 25px 55px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.3s;
+    width: 100px;
+    text-align: center;
+}
+
+.button:hover+.toaster {
+    opacity:1;
+}
